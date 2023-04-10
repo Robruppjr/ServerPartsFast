@@ -1,0 +1,57 @@
+@media only screen and (max-width:1024px) {
+	.pagewidth { padding: 3px; }
+	.joinLinks a:before,
+	.joinLinks a:after { display: none; }
+	.header-top {padding:10px;}
+}
+@media only screen and (max-width:800px) {
+	.show-mobile { display: block !important; }
+	.hide-mobile { display: none !important; }
+	.zdz-colLeft, .zdz-colRight{ display: none!important; }
+	
+	.header-top{padding:8px;}
+	.head-left, .head-right { display: block; }
+	.InfoBox .box {margin-right:0px;}
+	.tableBox { display: block; text-align: center; table-layout: auto; }
+	.tableBox > * { display: block; text-align: center; }
+	.head-left,	.head-right { text-align: center; }
+	.main-head .tableBox > * > * { display: block; }
+	.main-head .tableBox > * > * + * { margin-left: 0; margin-top: 15px; }
+	.main-head .db { display: none !important; }
+	.cInfo, .joinLinks{text-align:center;}
+	.shoplogo {margin:10px 0 10px;}
+	.header-top .text-right{ text-align: center; }
+	.top-nav li { float: none !important; display: inline-block; vertical-align: middle; }
+	.top-nav li { font-size: 0; display: inline-block; float: none; border: 0 !important; }
+	.top-nav li a { padding: 3px 6px !important; margin: 3px; font-size: 11px; float: none; }
+	.join a.btn-theme {display:inline-block; margin:10px 0;}
+	
+	.infoBox{ padding-top: 0;}
+	#LeftPanel .brand-scroll{display:none;}
+	.aboutusInfo{margin-bottom:0px !important;}
+	.join {  }
+	.cpyright {  }
+	.cpyright p { margin: 5px 0; }
+}
+@media only screen and (max-width:767px) {
+	.main-head {padding:5px 0 0px;  }
+	
+	.joinLinks { text-align: center; }
+	.head-right { margin-top: 15px;}
+	.InfoBox .box{width:100%; margin-bottom:10px; text-align: left;
+    padding-left: 15px;}
+	
+	.InfoBox .box:nth-child(2), .InfoBox .box:nth-child(3){}
+	
+}
+@media only screen and (max-width:640px) {
+	.promo-widget a img { width: 100%; }
+	.join p { margin-bottom: 6px; }
+}
+@media only screen and (max-width:639px) {
+	.main-head .inline-block + .inline-block { margin-left: 0; }
+}
+@media only screen and (max-width:389px) {
+	.shoplogo img { max-width: 160px !important; }
+	.promo-widget a img { display: inline-block; }
+}

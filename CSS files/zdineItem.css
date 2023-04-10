@@ -1,0 +1,474 @@
+body { margin: 0; }
+.zdzTabs *,
+.img-holder .lightbox:before { -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; }
+.zdzBody ul { margin: 0; padding: 0; }
+.zdzBody ul li { list-style-type: none; }
+.zdzBody { display: block !important;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+	background: #f9f9f9;
+    background: -moz-linear-gradient(top, #f9f9f9 0%, #ffffff 29%);
+    background: -webkit-linear-gradient(top, #f9f9f9 0%,#ffffff 29%);
+    background: linear-gradient(to bottom, #f9f9f9 0%,#ffffff 29%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#ffffff',GradientType=0 );}
+.zdz-page{
+	
+}
+@font-face {
+    font-family: 'Le Jeune Poster';
+    src: url('LeJeunePoster-StencilRegular.woff2') format('woff2'),
+        url('LeJeunePoster-StencilRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	
+}
+
+.zdzBody a { text-decoration: none; }
+#aboutzdz { display: none; }
+.main{ position: relative; }
+.main > * + * { padding-left: 15px; }
+.mdl-Box { margin-bottom: 15px; font-size: 14px; text-align:left }
+.mdl-Box .pad { padding: 15px; border: 3px solid #eaeaea;}
+.zdz-colRight { width: auto !important; }
+.col-mdl > div { margin-bottom: 15px; }
+.enlarge { padding: 10px 0; text-align: center; border-top: 3px solid #eaeaea; }
+.enlarge span { display: inline-block; background: url('../svg/icon-zoom.svg') right center no-repeat; -webkit-background-size: contain; background-size: contain; padding-right: 18px; font-size: 11px; text-transform: uppercase; color: #555; }
+.itemTitle { color: #000; font-weight: 600; font-size:18px; line-height: normal; margin-top: 0; margin-bottom: 15px; border-bottom: 3px solid #eaeaea; padding-bottom: 15px; text-transform:uppercase }
+.itemTitle * { margin: 0; padding: 0; color: #424242; font-weight: normal; font-size: 20px; line-height: normal; }
+.zdz-gallery .img-box {  border: 3px solid #eaeaea; width: 100%; margin-left: auto; margin-right: auto; }
+.img-holder { text-align: center; overflow: hidden;display: none; }
+.img-holder .imgBox { cursor: zoom-in; text-align: center; height: 420px; overflow: hidden;display: block; position: relative; }
+.img-holder img { text-align: center; display: inline-block; border: 0; max-width: 90%; max-height: 90%; }
+.thumb { font-size: 0; text-align: center; width:100%; margin-top:15px }
+.thumb label { display: inline-block; width:90px; }
+.thumb label .box { cursor: pointer; cursor: cell; border: 1px solid #e6e6e6; overflow: hidden; text-align: center; position: relative; margin: 0 0 15px 15px; height: 80px;background:#fff; }
+.thumb label img { display: inline-block; border: 0; }
+#imgView1:checked ~ .img-box #content1,
+#imgView2:checked ~ .img-box #content2,
+#imgView3:checked ~ .img-box #content3,
+#imgView4:checked ~ .img-box #content4,
+#imgView5:checked ~ .img-box #content5,
+#imgView6:checked ~ .img-box #content6,
+#imgView7:checked ~ .img-box #content7,
+#imgView8:checked ~ .img-box #content8,
+#imgView9:checked ~ .img-box #content9,
+#imgView10:checked ~ .img-box #content10,
+#imgView11:checked ~ .img-box #content11,
+#imgView12:checked ~ .img-box #content12,
+#imgView13:checked ~ .img-box #content13,
+#imgView14:checked ~ .img-box #content14,
+#imgView15:checked ~ .img-box #content15,
+#imgView16:checked ~ .img-box #content16,
+#imgView17:checked ~ .img-box #content17,
+#imgView18:checked ~ .img-box #content18,
+#imgView19:checked ~ .img-box #content19,
+#imgView20:checked ~ .img-box #content20 { display: block; }
+.newzdztabs input {
+position: absolute;
+opacity: 0;
+z-index: -1;
+}
+.newzdztabs{margin-bottom: 35px;margin-top: 0px;}
+.newzdztabs .tabs {
+border-radius: 0px;
+overflow: hidden;
+}
+.newzdztabs .tab {
+width: 100%;
+color: #fff;
+overflow: hidden;
+margin-bottom:12px;
+}
+.newzdztabs .tab-label {
+display: flex;
+justify-content: space-between;
+padding: 1.5em 1em;
+    background-color: #275ea3;
+font-weight: 400;
+cursor: pointer;
+font-size: 20px;
+    text-transform: uppercase;
+}
+.newzdztabs .tab-label:hover {
+background-color:#000010;
+}
+.newzdztabs .tab-label::after {
+content: "❯";
+width: 1em;
+height: 1em;
+text-align: center;
+transition: all 0.35s;
+}
+.newzdztabs .tab-content {
+max-height: 0;
+padding: 0 1em;
+color: #2c3e50;
+background: white;
+transition: all 0.35s;
+display:none;
+}
+.newzdztabs .tab-close {
+display: flex;
+justify-content: flex-end;
+padding: 1em;
+font-size: 0.75em;
+background: #2c3e50;
+cursor: pointer;
+}
+.newzdztabs .tab-close:hover {
+background: #1a252f;
+}
+.newzdztabs input:checked + .tab-label {
+background-color:#000010;
+}
+.newzdztabs input:checked + .tab-label::after {
+transform: rotate(90deg);
+}
+.newzdztabs input:checked ~ .tab-content {
+max-height: 100vh;
+padding: 1em;
+display:block;
+}
+	
+	.mdl-Box .pad {
+    padding: 15px;
+    padding-top: 25px;padding-bottom:25px;}
+	
+
+
+
+
+.dec h1,
+.dec h2,
+.dec h3,
+.dec h4,
+.dec h5,
+.dec h6 { margin: 15px 0 5px; }
+.dec h1 { font-size: 30px; }
+.dec h2 { font-size: 20px; }
+.dec h3 { font-size: 14px; color:#000 }
+.dec h4 { font-size: 18px; }
+.dec h5 { font-size: 16px; }
+.dec h6 { font-size: 14px; }
+
+/*
+-----------------------------------------------------------------------------------
+POPUP GALLERY
+-----------------------------------------------------------------------------------*/
+@-webkit-keyframes zoom {
+from { -ms-transform: scale(0); -webkit-transform: scale(0); transform: scale(0); opacity: 0; }
+to { -ms-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); opacity: 1; }
+}
+@keyframes zoom {
+from { -ms-transform: scale(0); -webkit-transform: scale(0); transform: scale(0); opacity: 0; }
+to { -ms-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); opacity: 1; }
+}
+.img-holder .lightbox:before { content: ""; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); opacity: 0; visibility: hidden; overflow: hidden; z-index: 999; }
+.img-holder input:checked ~ .lightbox:before { position: fixed; opacity: 1; visibility: visible; top: 0; }
+.img-holder input:checked ~ .lightbox { position: static; cursor: zoom-out; }
+.img-holder input:checked ~ .lightbox .img-popup { position: absolute; top: 0vh; left: 0; right: 0; bottom: 0; margin: 0 auto; border: 10px solid #333; background-color: #fff; z-index: 9999; width: 90%; width: calc(100% - 30px); max-width: 800px; max-height: 600px; -webkit-animation: zoom 0.5s ease-out; animation: zoom 0.5s ease-out; }
+.img-holder input:checked ~ .lightbox .img-popup:after { content: ""; cursor: pointer; display: block; width: 30px; height: 30px; background: url(Close-256.png) center center no-repeat #3a8391; -webkit-background-size: 50%; background-size: 40%; position: absolute; top: 5px; right: 5px; }
+.zdzBody [id^="popup"]:checked ~ .popup-bg { background-color: red; height: 10px; }
+
+
+
+#zdzContentsContainer .itemDescriptionC *, .tabBox * {
+}
+
+
+
+@media only screen and (min-width:1020px){
+.zdzTabs .tabBox:first-child{
+
+}
+}
+
+#topSearch{width:390px;}
+#topSearch form{margin:0;padding:0;display:block;position:relative;}
+#topSearch table{width:100%;position:relative;padding:0;}
+#topSearch tr + tr{display:none;}
+#topSearch table td{padding:0;}
+#topSearch input.v4sbox{margin:0;height:36px;line-height:36px;padding:0 40px 0 10px;border:1px solid #acacac!important;background-color:#fff;font-size:12px;color:#626262;width:100%;float:left; -webkit-appearance: none; -webkit-border-radius: 0;
+border-radius: 0;
+-webkit-box-shadow: none;
+box-shadow: none;}
+#topSearch input:focus{color:#666;}
+#topSearch .g-hdn{display:none;}
+#topSearch input[type=submit]{border:0;width:36px;height:36px;text-indent:-9999px;position:absolute;right:0;top:0;background:url(https://improveyourvehicle.co.uk/ebaystore/img/icon-search.png) center center no-repeat;font-size:0;cursor:pointer; -webkit-appearance: none; -webkit-border-radius: 0;
+border-radius: 0;
+-webkit-box-shadow:none;
+box-shadow: none;}
+#topSearch input[type=submit]:hover{background-color:#ccc;}
+@media only screen and (max-width: 800px){
+#topSearch{display:inline-block;width:70%;}}
+@media only screen and (max-width: 767px){
+#topSearch {width: 100%;}}.galleryside{width:50%;}
+.textside{width:50%;padding-left:20px;}
+.galleryside, .textside{float: left;display:inline-block;}.specification li{
+list-style: disc;
+list-style-type:disc !important;
+padding: 6px;    margin-bottom:2px;}
+.specification{ padding:0px 15px !important;}
+@media only screen and (max-width: 767px){
+.galleryside, .textside{padding:0px;width: 100%;}}
+@media only screen and (max-width: 767px){
+.slider:not(.col-1):not(.vScroll) .item { display:block;width:100%;}}
+.condTitle {color: #21a9d8;font-weight: normal;font-size: 20px;line-height: normal;margin-top: 0;margin-bottom: 4px;text-transform: uppercase;}
+.Title{    margin: 0px;
+    font-weight: 600;
+    color: #85bc41;
+    margin-bottom: 8px;     text-transform: uppercase;}
+	
+	.slider:not(.col-1):not(.vScroll) .item {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 7.5px;
+    padding-bottom: 5px;
+	width: 50%;
+}
+
+.slider .item img {
+    max-width: 100%;
+    padding: 11px;
+    background: #633816;
+    border: 1px solid #633816;
+}
+.zdzheadbutton{border-radius: 20px;
+    color: #000 !Important;
+    display: inline-block;
+    background: #9ecfe7;
+    padding: 10px 14px;
+    text-transform: uppercase;}
+	
+	.itemDescriptionC ul{margin-bottom:30px;    display: flex;
+    flex-wrap: wrap;}
+	.itemDescriptionC li{margin-bottom:5px;padding:6px;    max-width: 100%;
+    flex: 100%;}
+
+	#x-services ul {
+    display: inline-block;
+    float: right;
+    margin: auto;
+    width: 100%;
+    text-align: right;
+}
+#x-services ul li {
+    color: #333333;
+    display: inline-block;
+    padding: 5px 0px 12px 72px;
+    text-align: left;
+    background: url(https://www.z-dzine.com/all-content/customers/sugar-hill-mx-6/img/bgli.png) 32px 10px no-repeat;
+    float: none;
+    text-transform: upercase;
+    position: relative;
+    margin: 0;
+    margin-left: 0px;
+	    font-size: 16px;
+    text-transform: uppercase;
+}
+#x-services ul li span{ font-size:12px;}
+	@media only screen and (max-width:950px){
+#x-services ul li {
+    color: #333333;
+    display: inline-block;
+    padding: 60px 10px 12px 85px;
+    text-align: left;
+    background: url(https://www.z-dzine.com/all-content/customers/techbenchsystems/img/bgli.png) 30px 60px no-repeat ,url(https://www.z-dzine.com/all-content/customers/techbenchsystems/img/bgli1.png) left center no-repeat;
+    float: none;
+    text-transform: upercase;
+    position: relative;
+    margin: 0;
+    margin-left: 0px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+#x-services ul li span {
+    font-size: 12px;
+}
+	}
+	
+.zdznew-vbadge li{display:flex;justify-content:flex-start;align-items:center;}	
+.zdznew-vbadge li{ padding: 10px;margin-bottom: 10px;background: url(https://www.z-dzine.com/all-content/customers/techbenchsystems/img/dark-stripes.png);}
+.zdznew-vbadge li h3{text-transform: uppercase;margin-bottom: 7px;}
+.zdznew-vbadge li.zdzodd{background-color: #275ea3;}
+.zdznew-vbadge li.zdzeven{background-color: #9ecfe7;    color: #000;}
+.zdznew-vbadge li img{max-width:80px; margin-right:15px;}
+
+.zdzcontact {
+    display: inline-block;
+    margin: 0px auto 0;
+    float: left;
+    text-align: center;
+    width: 100%;
+    background: url(https://www.z-dzine.com/all-content/customers/sugar-hill-mx-6/img/mid.png) center no-repeat;
+    padding: 30px 0;
+    background-size: 100%;
+}
+.zdzcontactcontain{
+    overflow: visible !important;
+    padding: 0px 0 0 !important;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+	    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.zdzcontact .b1, .zdzcontact .b2, .zdzcontact .b3 {
+    display: inline-block;
+    margin: auto;
+    width: 31%;
+}
+.zdzcontact .b1 p {
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 0px 0 0px 0px;
+    color: #fff;
+    font-size: 20px;
+    text-align: left;
+    padding: 0 0 0 0px;
+    text-align: left;
+    line-height: 28px;
+}
+.zdzcontact .b2 p {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 0 0 0px;
+    line-height: 28px;
+}
+.zdzcontact .b3 p {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 0 0 0px;
+    line-height: 28px;
+}
+.zdzcontact .b3 {
+    padding: 0px 40px 0 15px;
+    float: right;
+}
+	@media only screen and (max-width:1200px){
+.zdzcontact {padding: 17px 0;}
+	}
+
+	@media only screen and (max-width:1000px){
+.zdzcontact .b1 p {font-size: 20px;}
+.zdzcontact .b2 p {font-size: 14px;}
+.zdzcontact .b3 p {font-size: 14px;}		
+.zdzcontact {padding: 9px 0;}
+	}
+	
+	@media only screen and (max-width:800px){
+	.img-holder .imgBox { cursor: zoom-in; text-align: center; height: 300px; overflow: hidden;display: block; position: relative; }	
+		#x-services ul {
+    background: none;
+    float: none;
+    text-align: center;    background-color: #275ea3;
+}
+#x-services ul li {
+    background: url(https://www.z-dzine.com/all-content/customers/techbenchsystems/img/bgli.png) 0px 15px no-repeat;
+    padding: 10px 5px 10px 30px;      background-size: 25px;  background-position: left center;
+}
+		
+			     .itemDescriptionC li:nth-child(even) {
+        background: #ebebeb;
+        color: #000;
+      }
+	  
+	  #x-services ul li {
+    font-size: 12px;    color: #fff;
+}
+#x-services ul li span {
+    font-size: 10px;
+}
+.zdzcontact {
+    padding: 0px 0 0px;
+    border-radius: 0;
+    margin: 0px auto 0;
+    background: none;
+}
+.zdzcontact .b1 p, .zdzcontact .b3 p{text-align:center;}
+.zdzcontact .b1, .zdzcontact .b3 {
+    display: inline-block;
+    background: #275ea3;
+    margin: auto;
+    width: 100%;
+    float: none;
+    text-align: center;
+    padding: 20px 15px 20px !important;
+    margin: auto;
+}
+.zdzcontact .b2 {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    float: none;
+    text-align: center;
+    padding: 20px 15px 20px !important;
+    margin: auto;
+    background: #000;
+}
+	  
+	}
+	
+@media only screen and (min-width:801px){
+	
+	     .itemDescriptionC li:nth-child(3), .itemDescriptionC li:nth-child(4), .itemDescriptionC li:nth-child(7), .itemDescriptionC li:nth-child(8), .itemDescriptionC li:nth-child(11), .itemDescriptionC li:nth-child(12),  .itemDescriptionC li:nth-child(15), .itemDescriptionC li:nth-child(16){
+        background: #ebebeb;
+        color: #000;
+      }
+	  
+	  	.itemDescriptionC li{margin-bottom:5px;padding:6px;    max-width:calc(50% - 5px);     flex: calc(50% - 5px);
+    margin-right: 5px;}
+	
+}
+	
+	
+	
+	.itemDescriptionC{  margin-top: 22px;}
+	
+	
+	.zdzpre{
+    z-index: 1;
+    top: -210px;
+    background: #275ea3;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 400;cursor: pointer;float:left;position: relative;
+}
+
+	.zdznext{
+    z-index: 1;
+    top: -210px;
+    background: #275ea3;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-weight: 400;cursor: pointer;float:right;position: relative;
+}
+
+.img-box .img-holder:nth-last-child(2) .zdznext, .img-box .img-holder:first-child .zdzpre{display:none;}
+
+.zdzbanner{margin-bottom: 15px;}
+
+	.slider:not(.col-1):not(.vScroll) .item h3{ background: #633816;
+    color: #fff;
+    margin: 0px;
+    padding: 0px 10px 10px;}
+
+.itemDescriptionC h3{font-family: 'Passion One', cursive;font-size:18px;letter-spacing: 1px;background: #0b9900;font-weight: 400;color: #fff;max-width: fit-content;padding: 5px 10px;border-radius: 5px;display: block;margin: 5px 0px 10px;}
+.mdl1zdz{background:url(https://www.z-dzine.com/all-content/customers/techbenchsystems/img/back2.png);color: #fff;}
+.mdl2zdz{background:#eee;}
+.mdl1zdz .itemTitle { color: #000;    margin-bottom: 30px;}
+	.zdzcontact .b3 a{    color: #9ecfe7;}
