@@ -1,4 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url("https://ninjashosting.com/global/ebay-global3.css");
+@import url("ebay-css.css");
+
+/*Header and Body*/
 
 .spfBody ul { margin: 0; padding: 0; }
 .spfBody ul li { list-style-type: none; }
@@ -19,4 +25,125 @@
         
     }
     
-    .spfBody a { text-decoration: none; }
+.spfBody a { text-decoration: none; }
+.pageloader { display: none !important; }
+#spfHeader { margin-bottom: 0px; }
+
+.spfWrap input[type=checkbox], .spfWrap input[type=radio] { display: none; }
+.spfWrap ul { margin: 0; padding: 0; }
+.spfWrap ul li { list-style-type: none; }
+.spfWrap a { text-decoration: none; }
+.spfWrap p { margin: 0 0 15px; }
+
+.spfWrap a,
+.spf-colLeft a{ color: #333; }
+
+.spfWrap a:hover,
+.spf-colLeft a:hover{ color: #9ecfe7 ; }
+
+.header-top { color: #fff; font-size: 16px; background-color: #000010; text-transform:uppercase;  padding: 14px 0;    font-weight: 700; }
+.top-nav li { display: inline-block; border-right:1px solid; line-height:11px;}
+.top-nav li a { display: inline-block; color:inherit; padding: 0 10px; }
+.top-nav li:last-child { border-right: 0; }
+.top-nav li:last-child a { padding-right: 0; }
+.main-head .tableBox > * > * { display: inline-block; vertical-align: middle; }
+.main-head .tableBox > * > * + * { margin-left: 25px; }
+
+/*Table Box*/
+.sm-tableBox,
+.tableBox { display: table; width: 100%; border-spacing: 0; }
+.tb-fixed { table-layout: fixed; }
+.sm-table-cell,
+.sm-tableBox > *,
+.table-cell,
+.tableBox > * { display: table-cell; vertical-align: middle; }
+.tableBox.vt > * { vertical-align: top; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-upper { text-transform: uppercase; }
+.text-normal { font-weight: normal; }
+.inline-block { display: inline-block; }
+.divider { height: 1px; background-color: #ddd; margin: 30px 0 !important; }
+.show-mobile { display: none !important; }
+
+
+/*eBay Layout */
+.spfWrap { margin-left: auto !important; margin-right: auto !important; padding:0px; }
+.spfWrap img { max-width: 100%; display: inline-block; }
+
+.spfWrap,
+table.tb_v4bc,
+.stBadge,
+#glbfooter,
+#gh,
+.gh-banner-active #gh,
+#sModule,
+.pagecontainer > table:nth-of-type(2) tr:first-child > td > table + table{ max-width: 1200px; }
+.clearfix:after,
+.slider *:after,
+.slider *:after,
+.sf-menu:after { clear: both; content: ""; display: table; }
+
+/*Footer*/
+.join .spfWrap { padding: 6px 0px; }
+
+
+/*Media Only Screen*/
+@media only screen and (max-width:1024px) {
+	.pagewidth { padding: 3px; }
+	.joinLinks a:before,
+	.joinLinks a:after { display: none; }
+	.header-top {padding:10px;}
+}
+@media only screen and (max-width:800px) {
+	.show-mobile { display: block !important; }
+	.hide-mobile { display: none !important; }
+	.spf-colLeft, .spf-colRight{ display: none!important; }
+	
+	.header-top{padding:8px;}
+	.head-left, .head-right { display: block; }
+	.InfoBox .box {margin-right:0px;}
+	.tableBox { display: block; text-align: center; table-layout: auto; }
+	.tableBox > * { display: block; text-align: center; }
+	.head-left,	.head-right { text-align: center; }
+	.main-head .tableBox > * > * { display: block; }
+	.main-head .tableBox > * > * + * { margin-left: 0; margin-top: 15px; }
+	.main-head .db { display: none !important; }
+	.cInfo, .joinLinks{text-align:center;}
+	.shoplogo {margin:10px 0 10px;}
+	.header-top .text-right{ text-align: center; }
+	.top-nav li { float: none !important; display: inline-block; vertical-align: middle; }
+	.top-nav li { font-size: 0; display: inline-block; float: none; border: 0 !important; }
+	.top-nav li a { padding: 3px 6px !important; margin: 3px; font-size: 11px; float: none; }
+	.join a.btn-theme {display:inline-block; margin:10px 0;}
+	
+	.infoBox{ padding-top: 0;}
+	#LeftPanel .brand-scroll{display:none;}
+	.aboutusInfo{margin-bottom:0px !important;}
+	.join {  }
+	.cpyright {  }
+	.cpyright p { margin: 5px 0; }
+}
+@media only screen and (max-width:767px) {
+	.main-head {padding:5px 0 0px;  }
+	
+	.joinLinks { text-align: center; }
+	.head-right { margin-top: 15px;}
+	.InfoBox .box{width:100%; margin-bottom:10px; text-align: left;
+    padding-left: 15px;}
+	
+	.InfoBox .box:nth-child(2), .InfoBox .box:nth-child(3){}
+	
+}
+@media only screen and (max-width:640px) {
+	.promo-widget a img { width: 100%; }
+	.join p { margin-bottom: 6px; }
+}
+@media only screen and (max-width:639px) {
+	.main-head .inline-block + .inline-block { margin-left: 0; }
+}
+@media only screen and (max-width:389px) {
+	.shoplogo img { max-width: 160px !important; }
+	.promo-widget a img { display: inline-block; }
+}
