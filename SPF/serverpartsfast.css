@@ -10,7 +10,9 @@
 #nt-feat .nt-fp{}
 
 /*Header and Body*/
-
+body { margin: 0; }
+.spfTabs *,
+.img-holder .lightbox:before { -webkit-transition: all .5s ease; -moz-transition: all .5s ease; -o-transition: all .5s ease; transition: all .5s ease; }
 .spfBody ul { margin: 0; padding: 0; }
 .spfBody ul li { list-style-type: none; }
 .spfBody { display: block !important;
@@ -56,6 +58,72 @@
 .main-head .tableBox > * > * + * { margin-left: 25px; }
 .main-head .db { height: 16px; }
 .sliderbg .head-left{ position: absolute; top: 29%;}		
+.newspftabs input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    }
+    .newspftabs{margin-bottom: 35px;margin-top: 0px;}
+    .newspftabs .tabs {
+    border-radius: 0px;
+    overflow: hidden;
+    }
+    .newspftabs .tab {
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+    margin-bottom:12px;
+    }
+    .newspftabs .tab-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 1em;
+        background-color: #275ea3;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 20px;
+        text-transform: uppercase;
+    }
+    .newspftabs .tab-label:hover {
+    background-color:#000010;
+    }
+    .newspftabs .tab-label::after {
+    content: "❯";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.35s;
+    }
+    .newspftabs .tab-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: #2c3e50;
+    background: white;
+    transition: all 0.35s;
+    display:none;
+    }
+    .newspftabs .tab-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: #2c3e50;
+    cursor: pointer;
+    }
+    .newspftabs .tab-close:hover {
+    background: #1a252f;
+    }
+    .newspftabs input:checked + .tab-label {
+    background-color:#000010;
+    }
+    .newspftabs input:checked + .tab-label::after {
+    transform: rotate(90deg);
+    }
+    .newspftabs input:checked ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
+    display:block;
+    }
 
 @media only screen and (max-width:767px) { 
     .sliderbg .head-left{ position: absolute;top: 0%;}	
@@ -344,7 +412,7 @@ table.tb_v4bc,
     
     
     @media only screen and (min-width:1020px){
-    .zdzTabs .tabBox:first-child{
+    .spfTabs .tabBox:first-child{
     
     }
     }
