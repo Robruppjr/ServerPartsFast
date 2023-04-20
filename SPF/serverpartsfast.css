@@ -177,11 +177,11 @@ body { margin: 0; }
 .dec h6 { font-size: 14px; }
 
 /* spf Sidebar */
-.zdz-colLeft,
+.spf-colLeft,
 #LeftPanel { width: 250px !important; overflow: hidden; }
 .lBox + .lBox,
 .rBox + .rBox { margin-top: 15px; }
-.zdz-colRight .col-inner { width: 130px; }
+.spf-colRight .col-inner { width: 130px; }
 .lBox .pad,
 .rBox .pad { padding: 15px; border: 1px solid #e6e6e6; border-top: 0; background-color: #fff; }
 #LeftPanel .v4midBox { border: 1px solid #e6e6e6; border-top: 0; padding: 0; background-color: #fff; }
@@ -221,6 +221,9 @@ body { margin: 0; }
 .inline-block { display: inline-block; }
 .divider { height: 1px; background-color: #ddd; margin: 30px 0 !important; }
 .show-mobile { display: none !important; }
+
+.spfWide{  }
+
 
 
 /*eBay Layout */
@@ -308,9 +311,43 @@ table.tb_v4bc,
 
 /*Footer*/
 .join .spfWrap { padding: 6px 0px; }
+.footin {
+    background: #000010;
+    padding: 50px;
+    background-repeat: repeat;
+	
+}
 .footin, .main-head{
 	background-repeat:repeat;
 }
+#spf-foot { margin: 0px 0; }
+.join { color: #fff; font-size: 12px;         background: linear-gradient(45deg, #1e7b00, #0a0);
+    text-transform: uppercase;
+    border-bottom: 1px solid #85bc41;}
+.join p { font-weight:normal; margin: 0; }
+.join a.btn-theme { font-size: 13px; text-align: center; padding: 8px 15px; vertical-align: middle; background-color: #3a8391; color: #fff; font-weight: bold; text-transform: uppercase; white-space: nowrap }
+.join a.btn-theme:hover {}
+.foot-links {  color: #fff; }
+.foot-links .col { position: relative; vertical-align: top; }
+.foot-links .col { padding: 0 15px; }
+.foot-links .col:first-child { padding-left: 0;  }
+.foot-links .col:last-child img { margin-top: 3px; }
+.foot-links h6 { margin: 0 0 8px; font-size: 17px; text-transform: uppercase; font-weight:600; color:#fff;}
+.foot-links ul li { font-size: 14px; line-height: 37px; }
+.foot-links ul li a { color:inherit; }
+.foot-links ul li.adrs { background: url(../img/icon-map.png) left 4px no-repeat; padding-left: 30px; margin-bottom: 5px;     line-height: 28px; }
+.foot-links ul li.num { background: url(../img/icon-phone.png) left 0 no-repeat; padding-left: 30px; margin-bottom: 5px; line-height: 19px; }
+.foot-links ul li.email a { background: url(../img/icon-mail.png) left center no-repeat; padding-left: 30px; text-transform: none; }
+.cpyright {color:#fff; font-size: 14px; padding: 12px 0; 	background:#275ea3; background-repeat:repeat;
+}
+.cpyright span{ display: inline-block; }
+.cpyright p { margin: 0; }
+.cpyright a {color:inherit;}
+.dsgn span { margin-right: 2px; display: inline-block; }
+.dsgn a { line-height: 24px; background: url() left center no-repeat; padding-left: 0px; display: inline-block; }
+
+.cstmContent .block-title {color:white;}
+
 
 
 /*Media Only Screen*/
@@ -318,8 +355,8 @@ table.tb_v4bc,
 	.img-holder input:checked ~ .lightbox .img-popup { max-width: 80vw }
 }
 @media only screen and (max-width:800px) {
-	.zdz-colRight,
-	.zdz-colLeft, #LeftPanel{ display: none!important; }
+	.spf-colRight,
+	.spf-colLeft, #LeftPanel{ display: none!important; }
 	.main .spf-col-main .col-inner { margin-left: 0; }
 	.main > * + *{ padding-left:0; }
 	.itemTitle,
